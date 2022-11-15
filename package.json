@@ -1,0 +1,21 @@
+{
+  "name": "@salient-sys/cloud-dtos",
+  "version": "1.0.0",
+  "description": "Data Transfer Objects used both in the front and the backend of the Cloud product.",
+  "main": "index.ts",
+  "types": "index.d.ts",
+  "files": [
+    "/src"
+  ],
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "lint-fix": "eslint src/** --fix"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unused-imports": "^2.0.0"
+  }
+}

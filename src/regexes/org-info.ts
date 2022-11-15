@@ -1,0 +1,3 @@
+const mailingAddressRegex = '';
+
+export { mailingAddressRegex };

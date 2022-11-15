@@ -1,0 +1,6 @@
+{
+  "cSpell.words": ["dtos"],
+  "[typescript]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  }
+}
