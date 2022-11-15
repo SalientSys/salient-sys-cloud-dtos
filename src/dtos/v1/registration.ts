@@ -19,13 +19,13 @@ interface IUserRegistrationDTO {
   password: string;
   pendingOrg?: string;
   contact: IContact;
-  email: string;
 }
 
 interface IVerifyUserRegistrationDTO {
   email: string;
   accessCode: string;
 }
+type IDoNotContactDTO = IVerifyUserRegistrationDTO;
 
 type IResendVerificationDTO = IInviteDTO;
 export {
@@ -35,4 +35,5 @@ export {
   IUserRegistrationDTO,
   IVerifyUserRegistrationDTO,
   IResendVerificationDTO,
+  IDoNotContactDTO,
 };

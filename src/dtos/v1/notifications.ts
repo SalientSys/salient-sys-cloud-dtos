@@ -9,8 +9,8 @@ enum InviteStatus {
   Ignored = 'ignored',
 }
 
-interface IInviteUpdateDTO {
+interface INotificationStatusUpdateDTO {
   status: InviteStatus;
 }
 
-export { IPutNotificationByIdDTO, InviteStatus, IInviteUpdateDTO };
+export { IPutNotificationByIdDTO, INotificationStatusUpdateDTO };

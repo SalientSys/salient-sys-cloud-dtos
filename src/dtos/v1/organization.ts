@@ -19,4 +19,4 @@ interface IOrganization {
 }
 
 type IPostOrganizationDTO = DeepPartial<IOrganization>;
-export { OrganizationType, IOrganization, IPostOrganizationDTO };
+export { IOrganization, IPostOrganizationDTO };

@@ -1,3 +1,4 @@
+import { PrimaryIdQueryParams } from '../../misc';
 import { DeepPartial } from '../../misc/deep-partial';
 import { IInviteDTO } from '../shared';
 
@@ -110,15 +111,21 @@ interface IGatewayDeployment {
   customerTag: string;
 }
 
+type IGatewayDeploymentDTO = IGatewayDeployment;
+
+interface IDeploymentByIdDTO {
+  [PrimaryIdQueryParams.DeploymentId]: string;
+}
+
 export {
   IDeploymentIntegratorInviteDTO,
   IPostDeploymentDTO,
   IRecorderV0,
   IServerInfo,
-  LicenseType,
   IFeatureKey,
   IEndUserInviteDTO,
   IPutDeploymentsV2DTO,
   IGatewayDeployment,
-  GatewayState,
+  IDeploymentByIdDTO,
+  IGatewayDeploymentDTO,
 };
