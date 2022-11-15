@@ -3,5 +3,6 @@ NPM package for the Data Transfer Objects that are reused between the front-end 
 
 
 To Install the package run: 
-
+```
 npm install @salient-sys/cloud-dtos
+```
