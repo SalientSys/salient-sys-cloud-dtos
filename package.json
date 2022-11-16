@@ -13,7 +13,7 @@
     "lint-fix": "eslint src/** --fix",
     "patch-publish": "tsc && npm version patch && npm publish --access public"
   },
-  "dependencies": {
+  "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.43.0",
     "@typescript-eslint/parser": "^5.43.0",
     "eslint-plugin-import": "^2.26.0",
