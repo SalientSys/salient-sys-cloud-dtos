@@ -1,6 +1,6 @@
 {
   "name": "@salient-sys/cloud-sst",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "Data Transfer Objects used both in the front and the backend of the Cloud product.",
   "main": "dist/index.js",
   "files": [
