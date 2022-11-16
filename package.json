@@ -9,7 +9,8 @@
   "scripts": {
     "lint": "eslint . --ext .ts",
     "build": "tsc",
-    "lint-fix": "eslint src/** --fix"
+    "lint-fix": "eslint src/** --fix",
+    "patch-publish": "npm version patch && npm publish --access public"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.43.0",
