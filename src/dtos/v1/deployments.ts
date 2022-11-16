@@ -128,4 +128,7 @@ export {
   IGatewayDeployment,
   IDeploymentByIdDTO,
   IGatewayDeploymentDTO,
+  IRemoteConnectStatus,
+  IAccessInfo,
+  IRemoteConnect,
 };
