@@ -5,6 +5,7 @@ import { IInviteDTO } from '../shared';
 interface IDeploymentIntegratorInviteDTO extends IInviteDTO {
   message?: string;
 }
+
 type IEndUserInviteDTO = IInviteDTO;
 
 interface ICoordinates {
@@ -104,6 +105,13 @@ interface IDeploymentV20 extends IIsRegistered, IPostDeploymentDTO {
   port: number;
 }
 
+interface IDeployment extends IIsRegistered, IManagementServer {
+  _id: string;
+  features: IDeploymentFeatures;
+  recorders?: string[];
+  port: number;
+}
+
 type IPutDeploymentsV2DTO = DeepPartial<IDeploymentV20>;
 
 interface IGatewayDeployment {
@@ -119,18 +127,22 @@ interface IDeploymentByIdDTO {
 }
 
 export {
-  IDeploymentIntegratorInviteDTO,
-  IPostDeploymentDTO,
-  IRecorderV0,
-  IServerInfo,
-  IFeatureKey,
-  IEndUserInviteDTO,
-  IPutDeploymentsV2DTO,
-  IGatewayDeployment,
   IDeploymentByIdDTO,
   IGatewayDeploymentDTO,
-  IRemoteConnectStatus,
-  IAccessInfo,
-  IRemoteConnect,
+  IGatewayDeployment,
+  IPutDeploymentsV2DTO,
+  IDeployment,
+  IDeploymentV20,
   IDeploymentFeatures,
+  IAccessInfo,
+  IRemoteConnectStatus,
+  IRemoteConnect,
+  IIsRegistered,
+  IPostDeploymentDTO,
+  IServerInfo,
+  IManagementServer,
+  IFeatureKey,
+  ICoordinates,
+  IEndUserInviteDTO,
+  IDeploymentIntegratorInviteDTO,
 };
