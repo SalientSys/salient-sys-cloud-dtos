@@ -4,4 +4,5 @@ export enum PrimaryIdQueryParams {
   OrganizationId = 'organizationId',
   UserId = 'userId',
   NotificationId = 'notificationId',
+  DefaultId = 'id',
 }
