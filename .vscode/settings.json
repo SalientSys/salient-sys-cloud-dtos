@@ -2,5 +2,25 @@
   "cSpell.words": ["dtos"],
   "[typescript]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
-  }
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#a596ea",
+    "activityBar.background": "#a596ea",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#ba4025",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#a596ea",
+    "statusBar.background": "#816be2",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#a596ea",
+    "statusBarItem.remoteBackground": "#816be2",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#816be2",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#816be299",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#816be2"
 }

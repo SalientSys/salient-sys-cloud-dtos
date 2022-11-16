@@ -16,6 +16,7 @@ interface IFeatureKey {
   key: string;
   description: string;
   quantity: number;
+  _id?: string;
 }
 
 enum LicenseType {
@@ -128,4 +129,8 @@ export {
   IGatewayDeployment,
   IDeploymentByIdDTO,
   IGatewayDeploymentDTO,
+  IRemoteConnectStatus,
+  IAccessInfo,
+  IRemoteConnect,
+  IDeploymentFeatures,
 };

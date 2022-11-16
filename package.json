@@ -1,21 +1,23 @@
 {
-  "name": "@salient-sys/cloud-dtos",
-  "version": "1.0.0",
+  "name": "@salient-sys/cloud-sst",
+  "version": "1.0.12",
   "description": "Data Transfer Objects used both in the front and the backend of the Cloud product.",
-  "main": "index.ts",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
   "files": [
-    "/src"
+    "/dist"
   ],
   "scripts": {
     "lint": "eslint . --ext .ts",
-    "lint-fix": "eslint src/** --fix"
+    "build": "tsc",
+    "lint-fix": "eslint src/** --fix",
+    "patch-publish": "npm version patch && npm publish --access public"
   },
-  "devDependencies": {
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.43.0",
     "@typescript-eslint/parser": "^5.43.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-unused-imports": "^2.0.0"
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "typescript": "^4.9.3"
   }
 }
