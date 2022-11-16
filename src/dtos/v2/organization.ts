@@ -6,4 +6,11 @@ interface IPatchOrganizationDTO {
   users?: string[];
   name?: string;
 }
-export { IPatchOrganizationDTO };
+
+interface IPatchOrganizationDTOBro {
+  contact?: IContact;
+  mailingAddress?: string;
+  users?: string[];
+  name?: string;
+}
+export { IPatchOrganizationDTO, IPatchOrganizationDTOBro };
