@@ -145,4 +145,5 @@ export {
   ICoordinates,
   IEndUserInviteDTO,
   IDeploymentIntegratorInviteDTO,
+  IRecorderV0,
 };
