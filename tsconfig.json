@@ -4,5 +4,5 @@
     "target": "es2015", // NODE version 8 and up
     "outDir": "./dist"
   },
-  "include": ["src/**/*", "./index.d.ts"]
+  "include": ["src/**/*", "./index.ts"]
 }

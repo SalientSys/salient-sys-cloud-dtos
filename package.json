@@ -2,9 +2,9 @@
   "name": "@salient-sys/cloud-dtos",
   "version": "1.0.6",
   "description": "Data Transfer Objects used both in the front and the backend of the Cloud product.",
-  "types": "index.d.ts",
+  "main": "index.ts",
   "files": [
-    "/src"
+    "src/*"
   ],
   "scripts": {
     "lint": "eslint . --ext .ts",
