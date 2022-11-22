@@ -35,6 +35,8 @@ interface IManagementServer {
   hostAddresses: string[];
   cvVersion: string;
   osVersion: string;
+  // Tracks guid of rs that is self hosted
+  selfHostedRecorder?: string;
 }
 
 interface IServerInfo {
