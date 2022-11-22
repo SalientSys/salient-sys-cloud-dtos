@@ -1,2 +1,2 @@
-export * from './contact';
-export * from './invite';
+export * from './invite.dto';
+export * from './did-contact.dto';
