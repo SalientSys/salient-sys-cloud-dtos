@@ -1,5 +1,6 @@
-export interface IVerifyResetPasswordDTO {
-  email: string;
+import { INotificationDestinationsDTO } from '../../shared';
+
+export interface IVerifyResetPasswordDTO extends INotificationDestinationsDTO {
   resetPassword: string;
   accessCode: string;
 }

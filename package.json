@@ -8,6 +8,7 @@
     "/src"
   ],
   "scripts": {
+    "wt": "tsc -w",
     "lint": "eslint . --ext .ts",
     "build": "tsc",
     "lint-fix": "eslint src/** --fix",

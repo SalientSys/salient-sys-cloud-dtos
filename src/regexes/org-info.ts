@@ -1,3 +1,0 @@
-const mailingAddressRegex = '';
-
-export { mailingAddressRegex };

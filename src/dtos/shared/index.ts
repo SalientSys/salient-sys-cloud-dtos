@@ -1,2 +1,2 @@
-export * from './invite.dto';
-export * from './did-contact.dto';
+export * from './access-code-verify.dto';
+export * from '../notification/notification-destinations.dto';
