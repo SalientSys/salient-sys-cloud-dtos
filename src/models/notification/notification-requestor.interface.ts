@@ -1,5 +1,6 @@
 import { NotificationSystem } from './notification-system.enum';
 
+// TODO: Change `email` field to mandantory.
 /**
  * @description The requestor/origin of a notification
  */
