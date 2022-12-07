@@ -14,7 +14,7 @@ export * from './remote-connect/remote-connect-status.interface';
 export * from './deployment-features.interface';
 export * from './deployment-info.interface';
 export * from './deployment.interface';
-export * from './deployment-v1.interface';
+export * from './deployment-v2.interface';
 export * from './is-registered.interface';
 export * from './management-server.interface';
 export * from './server-info.interface';
