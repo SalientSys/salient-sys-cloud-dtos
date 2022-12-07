@@ -1,5 +1,6 @@
 export * from './recorder/feature-key.interface';
 export * from './recorder/license-type.enum';
+export * from './recorder/recorder.interface';
 export * from './recorder/recorder-v0.interface';
 export * from './recorder/recording-server-containing.interface';
 
