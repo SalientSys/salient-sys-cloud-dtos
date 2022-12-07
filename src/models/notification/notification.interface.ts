@@ -14,8 +14,8 @@ export interface INotification {
   notificationType: NotificationType;
   message?: string;
 
-  createdAt: string; // UTC timestamp
-  updatedAt?: string; // UTC timestamp
+  createdAt: Date; // UTC timestamp
+  updatedAt?: Date; // UTC timestamp
 
   recipient: INotificationRecipient;
   requestor?: INotificationRequestor;
