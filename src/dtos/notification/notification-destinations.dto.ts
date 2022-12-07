@@ -3,6 +3,6 @@
  * Either email or phone has to be present
  */
 export interface INotificationDestinationsDTO {
-  email?: string;
+  email: string;
   phone?: string;
 }
