@@ -1,4 +1,9 @@
-import { IOrganization } from '../../models';
+import { IContact, IOrganization, OrganizationType } from '../../models';
 import { DeepPartial } from '../../misc/deep-partial';
 
-export type IPostOrganizationDTO = DeepPartial<IOrganization>;
+export interface IPostOrganizationDTO extends DeepPartial<IOrganization> {
+  name: string;
+  organizationType: OrganizationType;
+  contact: IContact;
+  mailingAddress: string;
+}

@@ -1,11 +1,8 @@
-import { IInviteDTO } from '../../shared';
+import { INotificationDestinationsDTO } from '../../notification/notification-destinations.dto';
+import { IAccessCodeVerifyDTO } from '../../shared';
 
-interface IVerifyUserRegistrationDTO {
-  email: string;
-  accessCode: string;
-}
+type IVerifyUserRegistrationDTO = IAccessCodeVerifyDTO;
 
-type IDoNotContactDTO = IVerifyUserRegistrationDTO;
-type IResendVerificationDTO = IInviteDTO;
+type IResendVerificationDTO = INotificationDestinationsDTO;
 
-export { IVerifyUserRegistrationDTO, IDoNotContactDTO, IResendVerificationDTO };
+export { IVerifyUserRegistrationDTO, IResendVerificationDTO };

@@ -1,3 +1,3 @@
-export interface IResetPasswordDTO {
-  email: string;
-}
+import { INotificationDestinationsDTO } from '../../shared';
+
+export type IResetPasswordDTO = INotificationDestinationsDTO;
