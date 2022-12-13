@@ -3,6 +3,7 @@ interface IGatewayDeployment {
   customerName: string;
   customerTag: string;
   // optional advanced variables
+  vpcCidrBlock?: string;
   cloudProxyEcrTag?: string;
   createPrivateLink?: string;
   openVpnClientDhcpNetwork?: string;
