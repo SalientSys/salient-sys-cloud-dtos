@@ -8,3 +8,4 @@ export * from './notification-recipient.interface';
 export * from './notification-requestor.interface';
 export * from './notification-data.interface';
 export * from './notification-result.interface';
+export * from './notification-user-type.enum';
