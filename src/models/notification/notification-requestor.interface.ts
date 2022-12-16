@@ -9,4 +9,5 @@ export interface INotificationRequestor {
   userId?: string;
   email?: string;
   system?: NotificationSystem;
+  organizationId?: string;
 }
