@@ -1,6 +1,6 @@
 {
   "name": "@salient-sys/cloud-sst",
-  "version": "1.0.31",
+  "version": "1.0.39",
   "description": "Data Transfer Objects used both in the front and the backend of the Cloud product.",
   "author": "Salient Systems Corporation",
   "license": "GNU GPLv3",
@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "wt": "tsc -w",
-    "lint": "eslint . --ext .ts",
+    "lint": "eslint .",
     "build": "tsc",
     "lint-fix": "eslint src/** --fix",
     "patch-publish": "tsc && npm version patch && npm publish --access public"
