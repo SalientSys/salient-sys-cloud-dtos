@@ -5,4 +5,5 @@
 export interface INotificationRecipient {
   email?: string;
   userId?: string;
+  organizationId?: string;
 }
