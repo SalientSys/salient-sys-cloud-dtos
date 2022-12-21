@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "wt": "tsc -w",
-    "lint": "eslint . --ext .ts",
+    "lint": "eslint .",
     "build": "tsc",
     "lint-fix": "eslint src/** --fix",
     "patch-publish": "tsc && npm version patch && npm publish --access public"
