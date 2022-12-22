@@ -4,5 +4,5 @@ export enum GatewayState {
   failed = 'failed',
   vpnFailed = 'vpnFailed',
   proxyFailed = 'proxyFailed',
-  secretManagerFailed = 'secretManagerFailed',
+  proxyConfigFailed = 'proxyConfigFailed',
 }
