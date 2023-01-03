@@ -13,5 +13,5 @@ export interface IRemoteConnectHealth {
     vpn: HealthState;
     proxy: HealthState;
     managementServer: HealthState;
-    recorders: { [guid: string]: HealthState };
+    recorders: Map<string,HealthState>
   }

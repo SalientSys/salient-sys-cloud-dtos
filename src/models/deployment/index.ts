@@ -11,6 +11,8 @@ export * from './remote-connect/remote-access-state.enum';
 export * from './remote-connect/remote-connect.interface';
 export * from './remote-connect/remote-connect-status.interface';
 export * from './remote-connect/secret-data.interface';
+export * from './remote-connect/remote-connect-health.interface';
+export * from './remote-connect/health-state.enum';
 
 export * from './deployment-features.interface';
 export * from './deployment-info.interface';
