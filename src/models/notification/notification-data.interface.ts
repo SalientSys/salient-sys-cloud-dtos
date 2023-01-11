@@ -1,3 +1,4 @@
+/** Extra internal metadata for processing notification. */
 interface INotificationData {
   orgConnectionRequestData?: IOrganizationConnectionRequestData;
   organizationAdminInviteData?: IOrganizationAdminInviteData;
