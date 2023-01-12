@@ -9,9 +9,9 @@ import { HealthState } from './health-state.enum';
  * @param recorders: Map of health state of all recorders. A recorder is healthy if server sends back any response.
  */
 export interface IRemoteConnectHealth {
-    env0: HealthState;
-    vpn: HealthState;
-    proxy: HealthState;
-    managementServer: HealthState;
-    recorders: Map<string,HealthState>
-  }
+  env0: HealthState;
+  vpn: HealthState;
+  proxy: HealthState;
+  managementServer: HealthState;
+  recorders: Map<string, HealthState>;
+}

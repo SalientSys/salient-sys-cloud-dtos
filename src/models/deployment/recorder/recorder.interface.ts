@@ -26,7 +26,7 @@ export interface IRecorder extends IServerInfo {
   ipLicensesTotal: number;
   /** Current used count of ip licenses. */
   ipLicensesUsed: number;
-  /** Max count of analago licenses available for recorder */
+  /** Max count of analog licenses available for recorder */
   analogLicensesTotal: number;
   /** Current used count of analog licenses. */
   analogLicensesUsed: number;
