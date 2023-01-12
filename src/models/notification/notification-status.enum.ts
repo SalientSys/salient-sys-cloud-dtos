@@ -5,9 +5,9 @@
  */
 export enum NotificationStatus {
   /** For notifications that are unread*/
-  Unread = "unread",
+  Unread = 'unread',
   /** For notifications that have been viewed */
-  Read = "read",
+  Read = 'read',
   /** For deleted notifications */
-  Deleted = "deleted",
+  Deleted = 'deleted',
 }

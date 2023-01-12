@@ -1,4 +1,4 @@
 export enum NotificationUserType {
-    Requestor = 'requestor',
-    Recipient = 'recipient'
+  Requestor = 'requestor',
+  Recipient = 'recipient',
 }
