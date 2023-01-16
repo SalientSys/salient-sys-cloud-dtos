@@ -7,6 +7,6 @@ export interface INotificationRecipient {
   email?: string;
   /** Mongo object id of recipient */
   userId?: string;
-  //!! Tony, I forgor what this is actually used for 💀
+  /** Used to ensure user has permission to send PATCH /notifications/:id at organization level */
   organizationId?: string;
 }

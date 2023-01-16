@@ -11,7 +11,7 @@ export interface INotificationRequestor {
   userId?: string;
   /** Email of requestor (should be mandatory if notification is sent by user) */
   email?: string;
-  //!! Tony, I don't know what this is 😅
+  /**Reserved field for future use. Original source of notification (MS, RS, AWS, or the Back-end itself) */
   system?: NotificationSystem;
   /** Organization object id of requestor (Only defined if requestor belong to org.) */
   organizationId?: string;

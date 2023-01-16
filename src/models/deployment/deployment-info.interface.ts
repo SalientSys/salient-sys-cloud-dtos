@@ -5,7 +5,7 @@ import { IManagementServer } from './management-server.interface';
 export interface IDeploymentInfo extends IIsRegistered, IManagementServer {
   /** Primary mongo *string* id of deployment. Should be same as guid */
   _id: string;
-  /** Holds all feature infor for deployment. Currently only track remote connect.*/
+  /** Holds all feature info for deployment. Currently only tracks remote connect.*/
   features: IDeploymentFeatures;
   /** Port for deployment */
   port: number;
