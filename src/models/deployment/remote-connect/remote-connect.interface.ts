@@ -6,4 +6,6 @@ export interface IRemoteConnect {
   accessInfo?: IAccessInfo[];
   proxyHost?: string;
   environment?: string;
+  /** Account id used for all gateway deployment requests */
+  accountId?: string;
 }
