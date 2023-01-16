@@ -1,3 +1,8 @@
+/**
+ * Type of notification
+ * @readonly
+ * @enum {string}
+ */
 export enum NotificationType {
   OrganizationAdminInvite = 'organization-admin-invite',
   OrganizationMemberInvite = 'organization-member-invite',
