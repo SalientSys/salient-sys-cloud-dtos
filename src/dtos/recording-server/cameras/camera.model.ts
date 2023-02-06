@@ -1,3 +1,4 @@
+import { DriverType } from "./driver-type.model";
 import { ICone } from "./cone.model";
 import { PtzSetting } from "./ptz-settings.model";
 
@@ -22,6 +23,7 @@ longitude: string | null,
 timeZone: string,
 ptzSetting: PtzSetting | null,
 serverGuid: string,
+driverType: DriverType,
 state: string;
 ipStreamType: string;
 cameraEntity: ICameraEntity;
