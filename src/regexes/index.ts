@@ -1,3 +1,5 @@
+import { lastNameRegex } from '../..';
+
 const phoneNumberRegex = /^[-+0-9()]+$/;
 const passwordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])/;
 /*
@@ -9,8 +11,7 @@ const passwordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])/;
   The other character ranges \u0180-\u024F, \u0250-\u02AF, \u0370-\u03FF, \u0400-\u04FF, \u0500-\u052F,
   and \u1E00-\u1EFF correspond to different Unicode scripts including Latin Extended-B, IPA Extensions, Greek, Cyrillic, and various other scripts.
 */
-const firstNameRegex =
-  /^[\u0041-\u005A\u0061-\u007A\u00C0-\u00FF\u0100-\u017F\u0180-\u024F\u0250-\u02AF\u0370-\u03FF\u0400-\u04FF\u0500-\u052F\u1E00-\u1EFF]+([ -']{0,1}[\u0041-\u005A\u0061-\u007A\u00C0-\u00FF\u0100-\u017F\u0180-\u024F\u0250-\u02AF\u0370-\u03FF\u0400-\u04FF\u0500-\u052F\u1E00-\u1EFF]+){0,1}$/;
+const firstNameRegex = /^[\p{L}\p{M}]+([ \-']{0,1}[\p{L}\p{M}]+){0,1}$/u;
 
 /*
 This regular expression allows a maximum of three words separated by spaces, hyphens, or apostrophes.
@@ -18,7 +19,6 @@ The first and last characters must belong to any of the Unicode script ranges fr
 ensuring that the string starts and ends with a word character rather than a symbol.
 The character ranges included in this regular expression are the same as in firstNameRegex.
 */
-const lastNameRegex =
-  /^[\u0041-\u005A\u0061-\u007A\u00C0-\u00FF\u0100-\u017F\u0180-\u024F\u0250-\u02AF\u0370-\u03FF\u0400-\u04FF\u0500-\u052F\u1E00-\u1EFF]+([ -']{0,1}[\u0041-\u005A\u0061-\u007A\u00C0-\u00FF\u0100-\u017F\u0180-\u024F\u0250-\u02AF\u0370-\u03FF\u0400-\u04FF\u0500-\u052F\u1E00-\u1EFF]+){0,2}$/;
+const lastNameRegex = /^[\p{L}\p{M}]+([ \-']{0,1}[\p{L}\p{M}]+){0,2}$/u;
 
 export { phoneNumberRegex, passwordRegex, lastNameRegex, firstNameRegex };
