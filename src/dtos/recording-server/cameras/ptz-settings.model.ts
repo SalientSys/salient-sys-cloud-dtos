@@ -1,5 +1,5 @@
 interface PtzSetting {
-    presets?: PresetsEntity[] | null;
+    presets: IPtzPreset[] | null;    
     ptzSettingId: number;
     isPtzEnabled: boolean;
     channelNo: number;
@@ -18,7 +18,7 @@ interface PtzSetting {
     homePreset3: number;
     homePreset4: number;
   }
-interface PresetsEntity {
+interface IPtzPreset {
     isDeleted: boolean;
     presetId: number;
     ptzSettingId: number;
@@ -28,5 +28,5 @@ interface PresetsEntity {
     doIncludeTour: boolean;
   }
 
-  export {PtzSetting, PresetsEntity}
+  export {PtzSetting, IPtzPreset}
   

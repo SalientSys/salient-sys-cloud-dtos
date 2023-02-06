@@ -1,4 +1,4 @@
-export type Cone = {
+export interface ICone {
     isDeleted: boolean;
     coneId: number;
     /** Degrees */
