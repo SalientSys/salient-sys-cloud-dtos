@@ -1,6 +1,6 @@
 import { IUser } from './user.interface';
+import { IOrganization } from '../organization';
 
 export interface IUserWithOrg extends Partial<IUser> {
-  organizationName?: string | null;
-  organizationType?: string | null;
+  organization: IOrganization | null;
 }
