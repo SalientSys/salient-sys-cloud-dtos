@@ -1,6 +1,6 @@
 {
   "name": "@salient-sys/cloud-sst",
-  "version": "1.0.51",
+  "version": "1.0.52",
   "description": "Data Transfer Objects used both in the front and the backend of the Cloud product.",
   "author": "Salient Systems Corporation",
   "license": "GNU GPLv3",
