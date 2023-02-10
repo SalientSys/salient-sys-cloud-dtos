@@ -54,7 +54,7 @@ publish_package:
   script:
     - npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
     - npm version patch
-    - git push origin HEAD
+    - git remote set-url --push origin "https://my_cd_token:$my_cd_token@gitlab.com/salientsystems/cloud-dtos.git"
     - npm publish
   only:
     - main
