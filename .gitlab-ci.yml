@@ -55,6 +55,6 @@ publish_package:
   only:
     - main
   dependencies:
-    - build_job
+    - build-job
   variables:
     NPM_TOKEN: $NPM_TOKEN
