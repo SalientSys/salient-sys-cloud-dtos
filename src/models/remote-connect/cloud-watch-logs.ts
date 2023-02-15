@@ -5,7 +5,6 @@ interface IFormattedCloudWatchLogs {
   json: string | null;
 }
 
-//TODO: coming from the package
 interface ICloudWatchLogs {
   Results: Array<Array<ICloudWatchLogsResult>>; // Array of arrays of results
 }
