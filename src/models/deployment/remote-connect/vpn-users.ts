@@ -1,5 +1,5 @@
-interface IVpnUsers {
+interface IVpnUser {
   Id: string;
   Ip: string;
 }
-export { IVpnUsers };
+export { IVpnUser };
