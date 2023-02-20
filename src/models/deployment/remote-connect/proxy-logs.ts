@@ -1,17 +1,17 @@
-interface IFormattedProxyLogs {
+interface IFormattedProxyLog {
   timestamp: string;
   timestampRelative: string | null;
   message: string;
   json: string | null;
 }
 
-interface IProxyLogs {
-  Results: Array<Array<IProxyLogsResult>>;
+interface IProxyLog {
+  Results: Array<Array<IProxyLogResult>>;
 }
 
-interface IProxyLogsResult {
+interface IProxyLogResult {
   Field: '@timestamp' | '@message' | '@ptr';
   Value: string;
 }
 
-export { IFormattedProxyLogs, IProxyLogs, IProxyLogsResult };
+export { IFormattedProxyLog, IProxyLog, IProxyLogResult };
