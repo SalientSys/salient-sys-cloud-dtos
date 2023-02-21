@@ -1,3 +1,9 @@
+export * from './camera/camera.interface';
+export * from './camera/cone.interface';
+export * from './camera/driver-type.enum';
+export * from './camera/ptz/ptz-preset.interface';
+export * from './camera/ptz/ptz-settings.interface';
+
 export * from './recorder/feature-key.interface';
 export * from './recorder/license-type.enum';
 export * from './recorder/recorder.interface';
@@ -13,6 +19,8 @@ export * from './remote-connect/remote-connect-status.interface';
 export * from './remote-connect/secret-data.interface';
 export * from './remote-connect/remote-connect-health.interface';
 export * from './remote-connect/health-state.enum';
+export * from './remote-connect/vpn/vpn-users';
+export * from './remote-connect/proxy/proxy-logs';
 
 export * from './deployment-features.interface';
 export * from './deployment-info.interface';
@@ -21,6 +29,3 @@ export * from './deployment-v2.interface';
 export * from './is-registered.interface';
 export * from './management-server.interface';
 export * from './server-info.interface';
-
-export * from './remote-connect/vpn-users'
-export * from './remote-connect/proxy-logs'
