@@ -1,4 +1,4 @@
-export interface IPtzPreset {
+export interface MsPtzPreset {
   isDeleted: boolean;
   presetId: number;
   ptzSettingId: number;

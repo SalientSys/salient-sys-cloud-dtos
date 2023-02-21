@@ -1,9 +1,3 @@
-export * from './camera/camera.interface';
-export * from './camera/cone.interface';
-export * from './camera/driver-type.enum';
-export * from './camera/ptz/ptz-preset.interface';
-export * from './camera/ptz/ptz-settings.interface';
-
 export * from './recorder/feature-key.interface';
 export * from './recorder/license-type.enum';
 export * from './recorder/recorder.interface';

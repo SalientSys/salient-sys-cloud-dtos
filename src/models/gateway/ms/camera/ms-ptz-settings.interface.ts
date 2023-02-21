@@ -1,7 +1,7 @@
-import { IPtzPreset } from './ptz-preset.interface';
+import { MsPtzPreset } from './ms-ptz-preset.interface';
 
-export interface PtzSetting {
-  presets: IPtzPreset[] | null;
+export interface MsPtzSetting {
+  presets: MsPtzPreset[] | null;
   ptzSettingId: number;
   isPtzEnabled: boolean;
   channelNo: number;

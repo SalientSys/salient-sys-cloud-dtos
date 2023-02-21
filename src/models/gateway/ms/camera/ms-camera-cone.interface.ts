@@ -1,4 +1,4 @@
-export interface ICone {
+export interface MsCameraCone {
   isDeleted: boolean;
   coneId: number;
   /** Degrees */

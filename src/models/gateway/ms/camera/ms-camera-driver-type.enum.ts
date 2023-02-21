@@ -1,4 +1,4 @@
-export enum DriverType {
+export enum MsCameraDriverType {
   /// <summary>
   /// All / any driver.
   /// </summary>
