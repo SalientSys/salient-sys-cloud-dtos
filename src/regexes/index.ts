@@ -36,4 +36,21 @@ const firstNameRegex = /^[\p{L}\p{M}]+([ \-']{0,1}[\p{L}\p{M}]+){0,1}$/u;
  */
 const lastNameRegex = /^[\p{L}\p{M}]+([ \-']{0,1}[\p{L}\p{M}]+){0,2}$/u;
 
+<<<<<<< HEAD
 export { phoneNumberRegex, passwordRegex, lastNameRegex, firstNameRegex };
+=======
+/**
+ * the `cidrRegex` regular expression validates CIDR Block IPv4
+ * 
+ * Example matches: 
+ * 10.0.0.0/16
+ * 192.168.1.1/24
+ * 
+ * Example non-matches:
+ * 10.0.0.0
+ * 192.168.1.1
+ */
+const cidrV4Regex = /(([1-9]{0,1}[0-9]{0,2}|2[0-4][0-9]|25[0-5])\.){3}([1-9]{0,1}[0-9]{0,2}|2[0-4][0-9]|25[0-5])\/([1-2][0-9]|3[0-1])/;
+
+export { phoneNumberRegex, passwordRegex, lastNameRegex, firstNameRegex, cidrV4Regex };
+>>>>>>> origin

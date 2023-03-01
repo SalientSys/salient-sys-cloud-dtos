@@ -13,6 +13,7 @@ interface IGatewayDeployment {
   openVpnClientDhcpNetworkMask?: string;
   openVpnClientStaticNetwork?: string;
   openVpnClientStaticNetworkMask?: string;
+  revision?: string;
 }
 
 type IGatewayDeploymentDTO = IGatewayDeployment;
