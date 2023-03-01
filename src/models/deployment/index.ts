@@ -21,3 +21,6 @@ export * from './deployment-v2.interface';
 export * from './is-registered.interface';
 export * from './management-server.interface';
 export * from './server-info.interface';
+
+export * from './remote-connect/vpn-users'
+export * from './remote-connect/proxy-logs'
