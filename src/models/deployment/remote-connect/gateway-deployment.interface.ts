@@ -2,9 +2,9 @@ interface IGatewayDeployment {
   deploymentName: string;
   customerName: string;
   customerTag: string;
-  accountId: string;
-  accountEnvironmentId: string;
-  gatewayEnvironmentId: string;
+  accountId?: string;
+  accountEnvironmentId?: string;
+  gatewayEnvironmentId?: string;
   // optional advanced variables
   vpcCidrBlock?: string;
   cloudProxyEcrTag?: string;
