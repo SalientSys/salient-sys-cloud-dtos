@@ -1,6 +1,22 @@
 const phoneNumberRegex = /^[-+0-9()]+$/;
 const passwordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])/;
-const entityNameRegex = /^[\p{L}\p{M}]+([ \-']{0,1}[\p{L}\p{M}]+){0,1}$/u;
+
+/**
+ * Validate leading or trailing spaces
+ * 
+* Example matches:
+ *   - "123Salient"
+ *   - "Salient Systems!"
+ *   - "*Saliént Systéms*"
+ *   - "{马 修}"
+ *
+ * Example non-matches:
+ *   - " Salient System"
+ *   - "Salient Systems "
+ *   - " Salient Systems "
+ * 
+ */
+const orgNameRegex = /^(?!\s)(?!.*\s$)[¡!¿?@\-_\.*,';:|"\(){}\p{L}\p{M}0-9][\p{L}\p{M}0-9¡!¿?@_.\-,"';:|\*\(){}\s]*$/u;
 
 /**
  * The `firstNameRegex` regular expression allows for a maximum of two words, separated by spaces, hyphens, or apostrophes.
@@ -19,7 +35,7 @@ const entityNameRegex = /^[\p{L}\p{M}]+([ \-']{0,1}[\p{L}\p{M}]+){0,1}$/u;
  *   - "José-Maria" (more than two words)
  
 */
-const firstNameRegex = entityNameRegex;
+const firstNameRegex = /^[\p{L}\p{M}]+([ \-']{0,1}[\p{L}\p{M}]+){0,1}$/u;
 
 /**
  * The `lastNameRegex` regular expression allows for a maximum of three words, separated by spaces, hyphens, or apostrophes.
