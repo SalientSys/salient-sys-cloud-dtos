@@ -1,5 +1,7 @@
 const phoneNumberRegex = /^[-+0-9()]+$/;
 const passwordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])/;
+const entityNameRegex = /^[\p{L}\p{M}]+([ \-']{0,1}[\p{L}\p{M}]+){0,1}$/u;
+
 /**
  * The `firstNameRegex` regular expression allows for a maximum of two words, separated by spaces, hyphens, or apostrophes.
  * The first and last characters must be a letter character from any script or a character intended to be combined with others (e.g. accents).
@@ -17,7 +19,7 @@ const passwordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])/;
  *   - "José-Maria" (more than two words)
  
 */
-const firstNameRegex = /^[\p{L}\p{M}]+([ \-']{0,1}[\p{L}\p{M}]+){0,1}$/u;
+const firstNameRegex = entityNameRegex;
 
 /**
  * The `lastNameRegex` regular expression allows for a maximum of three words, separated by spaces, hyphens, or apostrophes.
@@ -55,5 +57,6 @@ export {
   passwordRegex,
   lastNameRegex,
   firstNameRegex,
+  entityNameRegex,
   cidrV4Regex,
 };
