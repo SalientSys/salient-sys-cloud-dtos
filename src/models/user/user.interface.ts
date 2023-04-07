@@ -8,8 +8,10 @@ export interface IUser {
   /** Contact info for user */
   contact: IContact;
   /** Advanced permissions for user. EG: tracks if user is an admin */
+
   permissions: {
     role: UserRole;
+    tags: [];
   };
   /** Misc settings for user. */
   settings: IUserSettings;
