@@ -20,5 +20,6 @@ export enum NotificationType {
   UserRegistration = 'user-registration',
   UserRegistrationVerification = 'user-registration-verification',
   UserPasswordReset = 'user-password-reset',
+  AdministeredUserRegistrationVerification = 'administered-user-registration-verification',
   Other = 'other',
 }
