@@ -18,10 +18,19 @@ interface IDeploymentIntegratorInviteData {
   deploymentId: string;
 }
 
+enum RecipientStatus {
+  Solicited = 'solicited',
+  AccountCreated = 'account-created',
+  OrganizationCreated = 'organization-created',
+  OrganizationVerified = 'organization-verified',
+  OrganizationAvailable = 'organization-available',
+}
+
 interface IOrganizationConnectionRequestData {
   integratorOrgId: string;
   endUserOrgId: string;
   deploymentIds?: string[];
+  status?: RecipientStatus;
 }
 
 interface IDeploymentQuoteRequestData {
